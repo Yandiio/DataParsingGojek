@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoFoodActivity">
+
+    <ImageView
+        android:id="@+id/gofood"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/menu_gofood"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tl_form"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tl_form"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/OrderFood"
+            android:gravity="center_horizontal"
+            android:text="Order Food"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:id="@+id/tr_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Nama : "
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Alamat : "
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_pesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Pesan : "
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tl_form"
+            android:layout_margin="16dp"
+            android:background="@color/kedua"
+            android:text="Pesan"
+            android:textColor="@android:color/white" />
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
