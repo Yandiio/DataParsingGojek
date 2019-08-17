@@ -8,23 +8,31 @@
 
     <ImageView
         android:id="@+id/gofood"
-        android:layout_width="210dp"
-        android:layout_height="200dp"
-        android:layout_marginEnd="100dp"
+        android:layout_width="193dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="108dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/menu_gofood"
         android:foregroundGravity="center_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/tl_form"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/tl_form"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="60dp"
+        android:layout_width="411dp"
+        android:layout_height="352dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="76dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gofood">
 
         <TextView
             android:id="@+id/OrderFood"
@@ -49,6 +57,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/et_nama"
                 android:layout_width="310dp"
                 android:layout_height="50dp" />
 
@@ -69,6 +78,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/et_alamat"
                 android:layout_width="310dp"
                 android:layout_height="50dp" />
         </TableRow>
@@ -88,6 +98,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/et_pesan"
                 android:layout_width="310dp"
                 android:layout_height="50dp" />
         </TableRow>

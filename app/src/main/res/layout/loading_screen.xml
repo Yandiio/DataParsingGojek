@@ -16,19 +16,18 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="50dp"
         android:src="@drawable/gojek"
-        android:padding="80dp" />
+        android:layout_margin="30dp" />
 
 
     <ProgressBar
         android:id="@+id/progress"
-        android:layout_gravity="center_horizontal"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="58dp"
-        android:progressTint="@color/colorPrimary"
-        />
+        android:progressTint="@color/colorPrimary" />
 
 
 </LinearLayout>
